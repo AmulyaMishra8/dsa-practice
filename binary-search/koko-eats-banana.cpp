@@ -4,7 +4,7 @@ using namespace std;
 
 int kokoEats(vector<int> &piles, int h){
     int maxi = INT_MIN;
-    for(int i = 0; i < piles.size(); i++){
+    for(size_t i = 0; i < piles.size(); i++){
         maxi = max(maxi, piles[i]);
     }
 
@@ -14,7 +14,7 @@ int kokoEats(vector<int> &piles, int h){
     while(left <= right){
         int mid = left + (right - left)/2;
         int currTime = 0; 
-        for(int j = 0; j < piles.size(); j++){
+        for(size_t j = 0; j < piles.size(); j++){
             currTime += (piles[j] + mid - 1) / mid;
         }
 
