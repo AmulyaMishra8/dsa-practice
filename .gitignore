@@ -1,0 +1,11 @@
+# compiled binaries — only push source code
+*.exe
+*.o
+*.out
+*.obj
+*.pdb
+
+# editor / OS junk
+.vs/
+Thumbs.db
+Desktop.ini
